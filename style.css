@@ -1,0 +1,77 @@
+p {margin: 0; padding: 0;}
+
+
+.container {
+    max-width: 1000px; 
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.notify {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.notify__text {
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.notify__btn {
+    display: flex;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: .4rem .2rem;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+
+.notify__btn:hover {
+    opacity: .75;
+}
+
+
+.not--btn {
+    opacity: 1;
+    transform: opacity;
+    transition: opacity .5s, transform .6s;
+}
+
+.notify__btn--on {border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: .2rem 1rem;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;}
+
+.openned .notify__btn--on {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: .2rem 1rem;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold; opacity: 1;
+}
+
+.notify__btn--off {
+    padding: .2rem 1rem;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    opacity: 1;}
+   
+
+
+
+.openned .notify__btn--off { padding: .2rem 1rem;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    opacity: 0;}
